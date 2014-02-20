@@ -49,6 +49,15 @@ h2 {}
 
 }
 
+.menu-item {
+	display: inline-block;
+}
+.menu-item-inner {
+}
+.underline-base {
+	background-color: gray;
+}
+
 #main-div {
 	height: auto !important; 
 	min-height: 100%;

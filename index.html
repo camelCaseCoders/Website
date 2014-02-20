@@ -7,15 +7,15 @@
 	<meta name="viewport" content="width=device-width">
 
 	<title>camelCaseCoders</title>
-	<link rel="stylesheet" type="text/css" href="style/main-style.css">
-	<link rel="stylesheet" type="text/css" href="style/menu-item.css">
+	<link rel="stylesheet" type="text/css" href="styles/main-style.css">
+	<link rel="stylesheet" type="text/css" href="styles/menu-item.css">
 
 	<script type="text/javascript" src="lib/jquery.js"></script>
 	<script type="text/javascript" src="lib/angular.js"></script>
 	<script type="text/javascript" src="lib/angular-route.js"></script>
-	<script type="text/javascript" src="script/menu-item.js"></script>
+	<script type="text/javascript" src="scripts/menu-item.js"></script>
 
-	<script type="text/javascript" src="script/app.js"></script>
+	<script type="text/javascript" src="scripts/app.js"></script>
 
 </head>
 
@@ -26,7 +26,7 @@
 			<h1>camelCaseCoders</h1>
 			<nav>
 				<ul>
-					<a class="menu-list" href=""><li class="menu-item" underline="black">Start</li></a>
+					<a class="menu-list" href="#/"><li class="menu-item" underline="black">Start</li></a>
 					<a class="menu-list" href=""><li class="menu-item" underline="black">Något</li></a>
 					<a class="menu-list" href=""><li class="menu-item" underline="black">Annat</li></a>
 					<a class="menu-list" href=""><li class="menu-item" underline="black">Sådärja</li></a>
@@ -35,9 +35,9 @@
 			</nav>
 		</header>
 		<aside id="left-aside"></aside>
-		<div id="content">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ipsum neque, pulvinar sed neque rhoncus, pretium tristique eros. Quisque nisi neque, condimentum vel consectetur eget, consectetur vitae tellus. Cras sit amet ante in dolor pulvinar mattis eu sed quam. Nulla eu condimentum mi. Donec vestibulum sem urna, id imperdiet nisi tempus at. Morbi ultrices, lorem quis condimentum feugiat, nibh purus imperdiet neque, sit amet pellentesque massa nibh at purus. Mauris ut interdum nulla, sed laoreet diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque nisi ante, iaculis non eros vitae, pellentesque imperdiet eros. Fusce nec gravida lacus. Praesent egestas magna ac pharetra ornare. Nulla accumsan, quam ut ultrices consequat, justo orci luctus nibh, a suscipit neque arcu non nibh. Vestibulum consequat metus vitae nunc faucibus, eget molestie enim aliquam. Suspendisse convallis sapien semper luctus semper. Phasellus eu euismod augue. Ut lorem nisl, bibendum vitae diam at, elementum fringilla nisi. Cras vitae nulla sed tellus ullamcorper elementum. Phasellus dolor lacus, tincidunt at ante lobortis, tempor aliquet est. Maecenas tristique consectetur eros, eget eleifend nunc viverra sit amet. Mauris id mi vitae dui posuere commodo. Praesent a viverra enim, non viverra nisl. Suspendisse non justo ac ligula scelerisque volutpat. Nunc sit amet ornare nunc, at viverra elit. Donec tempor neque et rutrum interdum. Quisque elementum vehicula ligula, eu varius arcu egestas a. Nam facilisis facilisis lacus id vulputate. Aenean viverra ullamcorper ligula, non accumsan quam posuere nec. Ut iaculis pharetra mollis. Ut consectetur, justo non interdum molestie, augue nisi ullamcorper velit, nec feugiat justo orci vitae ante. Etiam nunc tortor, facilisis ut lobortis sed, scelerisque ac turpis. Donec nec augue eu erat viverra ultrices. Pellentesque lacinia lacus et dolor eleifend, nec viverra odio posuere. Quisque non cursus ante. Maecenas vitae augue odio. Proin id mattis velit, sed condimentum metus. Ut quis eros metus. Nunc dignissim pharetra sagittis. Vivamus ut dolor faucibus, pharetra tortor sit amet, interdum erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce aliquet dapibus ipsum. Curabitur commodo justo a orci pharetra hendrerit. Fusce magna est, imperdiet vitae condimentum ornare, adipiscing in purus. Pellentesque eu volutpat ante. Nam et nibh ac ipsum auctor porta eget convallis nulla. Duis eu rhoncus nunc. Vivamus vel feugiat augue. Fusce sem elit, blandit eget blandit a, ullamcorper eget nunc. Quisque mollis rutrum ipsum. Sed quis enim quis purus bibendum accumsan id ut odio. Sed ac tristique sem, molestie ornare nulla. Morbi ornare et orci vel convallis. Praesent quis lorem volutpat, vestibulum nisl ac, congue urna. Duis vel semper orci, sed rutrum justo. Pellentesque tristique ante sit amet aliquam tempor. Pellentesque non euismod magna. Nam auctor eu elit et euismod. Sed a pharetra mauris, viverra blandit urna. Nam id risus felis. Pellentesque vitae eros et arcu lobortis euismod. Nam gravida vulputate elementum. Praesent sit amet faucibus massa, sit amet ullamcorper turpis.
-		</div>
+
+		<div id="content" ng-view></div>
+		
 		<aside id="right-aside"></aside>
 		<footer>
 			<h2>camelCaseCoders</h2>

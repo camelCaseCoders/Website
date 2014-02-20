@@ -3,7 +3,7 @@ angular.module('app', ['ngRoute', 'menuItem'])
 	function($routeProvider) {
 		$routeProvider
 		.when('/', {
-					
+			templateUrl: 'templates/start.html'
 		})
 		.otherwise({
 			redirectTo: '/'
