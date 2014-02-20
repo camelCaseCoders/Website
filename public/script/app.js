@@ -1,4 +1,4 @@
-angular.module('app', ['ngRoute'])
+angular.module('app', ['ngRoute', 'menuItem'])
 .config(['$routeProvider',
 	function($routeProvider) {
 		$routeProvider

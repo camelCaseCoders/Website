@@ -10,12 +10,18 @@ body {
 }
 header {
 	width: 100%;
-	background: rgb(244, 232, 255);
+	background-image: url(../pics/sunset.jpg);
+	background-repeat: no-repeat;
+	background-color: #6B3D2D;
+	/*background: rgb(244, 232, 255);
 	background: -moz-linear-gradient(30deg, rgb(244, 232, 255) 0%, rgb(255, 211, 225) 100%);
 	background: -webkit-linear-gradient(30deg, rgb(244, 232, 255) 0%, rgb(255, 211, 225) 100%);
 	background: -o-linear-gradient(30deg, rgb(244, 232, 255) 0%, rgb(255, 211, 225) 100%);
 	background: -ms-linear-gradient(30deg, rgb(244, 232, 255) 0%, rgb(255, 211, 225) 100%);
-	background: linear-gradient(120deg, rgb(244, 232, 255) 0%, rgb(255, 211, 225) 100%);
+	background: linear-gradient(120deg, rgb(244, 232, 255) 0%, rgb(255, 211, 225) 100%);*/
+}
+nav {
+	display: inline;
 }
 footer {
 	width: 100%;
@@ -38,6 +44,11 @@ h1 {
 }
 h2 {}
 
+
+.menu-list {
+
+}
+
 #main-div {
 	height: auto !important; 
 	min-height: 100%;
@@ -56,9 +67,10 @@ h2 {}
 	display: inline-block;
 }
 
+
 @media screen and (min-width: 1000px) {
 	header {
-		height: 100px;
+		height: 110px;
 		padding-top: 30px;
 		padding-left: 30px;
 	}
@@ -66,7 +78,7 @@ h2 {}
 	li {
 		font-size: 20px;
 	}
-	li + li {
+	ul > .menu-list {
 		margin-left: 40px;
 	}
 	h1 {
