@@ -8,23 +8,53 @@ html {
 body {
 	min-height: 100%;
 }
-#main-div {
-	height: auto !important; 
-    min-height: 100%;
-    height: 100%;
-    background-color: white;
-}
 header {
 	width: 100%;
 	background-color: black;
-    color: white;
+	color: white;
 }
 footer {
 	width: 100%;
+	background-color: black;
+	color: white;
+}
+h1 {}
+h2 {}
+
+#main-div {
+	height: auto !important; 
+	min-height: 100%;
+	height: 100%;
+	background-color: pink;
+}
+#left-aside {
+	display: inline-block;
+}
+#content {
+	display: inline-block;
+}
+#right-aside {
+	display: inline-block;
 }
 
 @media screen and (min-width: 1000px) {
 	header {
 		height: 200px;
+		padding-top: 30px;
+		padding-left: 30px;
+	}
+	h1 {
+		font-size: 50px;
+	}
+	#left-aside {
+		width: 20%;
+		height: 500px;
+	}
+	#content {
+		width: 59%; 
+	}
+	#right-aside {
+		width: 20%;
+		height: 500px;
 	}
 }
