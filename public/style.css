@@ -10,8 +10,12 @@ body {
 }
 header {
 	width: 100%;
-	background-color: black;
-	color: white;
+	background: rgb(244, 232, 255);
+	background: -moz-linear-gradient(30deg, rgb(244, 232, 255) 0%, rgb(255, 211, 225) 100%);
+	background: -webkit-linear-gradient(30deg, rgb(244, 232, 255) 0%, rgb(255, 211, 225) 100%);
+	background: -o-linear-gradient(30deg, rgb(244, 232, 255) 0%, rgb(255, 211, 225) 100%);
+	background: -ms-linear-gradient(30deg, rgb(244, 232, 255) 0%, rgb(255, 211, 225) 100%);
+	background: linear-gradient(120deg, rgb(244, 232, 255) 0%, rgb(255, 211, 225) 100%);
 }
 footer {
 	width: 100%;
@@ -20,28 +24,33 @@ footer {
 }
 ul {
 	list-style-type: none;
+	display: inline-block;
 }
 li {
-		display: inline;
+	display: inline;
 }
 a {
 	color: white;
 	text-decoration: none;
 }
-h1 {}
+h1 {
+	display: inline;
+}
 h2 {}
 
 #main-div {
 	height: auto !important; 
 	min-height: 100%;
 	height: 100%;
-	background-color: tomato;
+	background-color: #ffffff;
 }
 #left-aside {
 	display: inline-block;
+	display: none;
 }
 #content {
 	display: inline-block;
+
 }
 #right-aside {
 	display: inline-block;
@@ -49,19 +58,20 @@ h2 {}
 
 @media screen and (min-width: 1000px) {
 	header {
-		height: 200px;
+		height: 100px;
 		padding-top: 30px;
 		padding-left: 30px;
 	}
-	ul {
-		height: 30px;
-		margin-top: 100px;
+	ul {}
+	li {
+		font-size: 20px;
 	}
 	li + li {
 		margin-left: 40px;
 	}
 	h1 {
 		font-size: 50px;
+		margin-right: 400px;
 	}
 	#left-aside {
 		width: 20%;
