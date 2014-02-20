@@ -3,7 +3,7 @@ angular.module('app', ['ngRoute'])
 	function($routeProvider) {
 		$routeProvider
 		.when('/', {
-			
+					
 		})
 		.otherwise({
 			redirectTo: '/'
