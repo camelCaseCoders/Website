@@ -23,7 +23,7 @@
 
 <body>
 
-	<div id="main-div">
+	<div id="wrapper">
 		<header class="clearfix">
 			<h1>camelCaseCoders</h1>
 			<nav>
@@ -36,15 +36,18 @@
 				</ul>
 			</nav>
 		</header>
-		<aside id="left-aside"></aside>
+		<div id="container" class="clearfix">
+			<aside id="left-aside"></aside>
 
-		<div id="content" ng-view></div>
-		
-		<aside id="right-aside"></aside>
-		<footer>
-			<h2>camelCaseCoders</h2>
-		</footer>
+			<div id="content" ng-view></div>
+			
+			<aside id="right-aside"></aside>
+		</div>
+		<div id="push"></div>
 	</div>
+	<footer>
+		<h2>camelCaseCoders</h2>
+	</footer>
 
 </body>
 
