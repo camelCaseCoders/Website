@@ -6,8 +6,28 @@ angular.module('menuItem', [])
         template: '<div class="menu-item-inner" ng-transclude></div><div class="underline-base"></div><div class="underline-overlay"></div>',
         scope: {underline: '@'},
         link: function(scope, element, attrs) {
-        	var $overlay = $(element.find('.underline-overlay')[0])
+            var $elements = element.find('div');
+            window.elements = $elements;
+        	var $overlay = $($elements[2])
         	.css('background-color', scope.underline);
+
+            var $base = $($elements[1]),
+                width = element.width();
+            element.mouseover(function() {
+                // $base.animate({
+                //     width: '0px'
+                // }, 100);
+                // $base.hide();
+                $base.addClass('underline-base-hover');
+                $base.width(0);
+            })
+            .mouseout(function() {
+                // $base.animate({
+                //     width: width
+                // }, 200);
+                $base.removeClass('underline-base-hover');
+                $base.width(width);
+            });
         }
     };
 });

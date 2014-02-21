@@ -9,6 +9,8 @@ app.use(express.static(__dirname + '/public'))
 server.listen(8080);
 console.log('Server up!');
 
+var htmldir = __dirname + '/html';
+
 app.get('/', function (req, res, next) {
-	res.sendfile(__dirname + '/index.html');
+	res.sendfile(htmldir + '/index.html');
 });
