@@ -9,7 +9,6 @@ body {
 	min-height: 100%;
 }
 header {
-	width: 100%;
 	background-image: url(../pics/sunset.jpg);
 	background-repeat: no-repeat;
 	background-color: #6B3D2D;
@@ -21,7 +20,8 @@ header {
 	background: linear-gradient(120deg, rgb(244, 232, 255) 0%, rgb(255, 211, 225) 100%);*/
 }
 nav {
-	display: inline;
+	float: right;
+	margin-right: 10px;
 }
 footer {
 	width: 100%;
@@ -53,6 +53,8 @@ h2 {}
 	display: inline-block;
 }
 .menu-item-inner {
+	background-color: black;
+	padding: 10px;
 }
 .underline-base {
 	background-color: gray;
@@ -92,7 +94,6 @@ h2 {}
 	}
 	h1 {
 		font-size: 50px;
-		margin-right: 400px;
 	}
 	#left-aside {
 		width: 20%;
