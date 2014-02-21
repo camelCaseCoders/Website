@@ -12,18 +12,11 @@ angular.module('menuItem', [])
 				$overlay = $($elements[2])
 					.css('background-color', scope.underline);
 
-			var width = $inner.outerWidth();
 			element.mouseover(function() {
 				$base.addClass('underline-base-hover');
-				$base.width(0);
 			})
 			.mouseout(function() {
 				$base.removeClass('underline-base-hover');
-				$base.width(width);
-			});
-			$(window).resize(function() {
-				width = $inner.outerWidth();
-				$base.width($inner.outerWidth());
 			});
 		}
 	};

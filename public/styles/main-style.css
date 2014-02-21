@@ -9,9 +9,7 @@ body {
 	min-height: 100%;
 }
 header {
-	background-image: url(../pics/sunset.jpg);
-	background-repeat: no-repeat;
-	background-color: #6B3D2D;
+	background-color: #2BACC5;
 	/*background: rgb(244, 232, 255);
 	background: -moz-linear-gradient(30deg, rgb(244, 232, 255) 0%, rgb(255, 211, 225) 100%);
 	background: -webkit-linear-gradient(30deg, rgb(244, 232, 255) 0%, rgb(255, 211, 225) 100%);
@@ -30,17 +28,14 @@ footer {
 }
 ul {
 	list-style-type: none;
-	display: inline-block;
 }
 li {
-	display: inline;
 }
 a {
 	color: white;
 	text-decoration: none;
 }
 h1 {
-	display: inline;
 }
 h2 {}
 
@@ -81,7 +76,6 @@ h2 {}
 
 @media screen and (min-width: 1000px) {
 	header {
-		height: 110px;
 		padding-top: 30px;
 		padding-left: 30px;
 	}
@@ -89,8 +83,8 @@ h2 {}
 	li {
 		font-size: 20px;
 	}
-	ul > .menu-list {
-		margin-left: 40px;
+	.menu-list + .menu-list {
+		margin-left: 20px;
 	}
 	h1 {
 		font-size: 50px;

@@ -1,4 +1,5 @@
 .menu-item {
+    margin-bottom: -2px;
 }
 .menu-item-inner {
 }
@@ -12,6 +13,7 @@
 }
 .underline-base-hover {
     transition: width 150ms;
+    width: 0;
 }
 .underline-overlay {
     width: 100%;
