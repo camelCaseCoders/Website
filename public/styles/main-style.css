@@ -18,15 +18,7 @@ nav {
 	float: right;
 	margin-right: 10px;
 }
-footer {
-	background-color: black;
-	color: white;
-}
-ul {
-	list-style-type: none;
-}
-li {
-}
+li {}
 a {
 	color: white;
 	text-decoration: none;
@@ -50,6 +42,11 @@ h2 {}
 	background-color: gray;
 }
 
+#wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
 #container {
 	margin: auto;
 }
@@ -67,16 +64,10 @@ h2 {}
 	height: 100px;
 	background-color: #eee;
 }
-#wrapper {
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	margin-bottom: -40px;
+#main-footer {
+	background-color: black;
+	color: white;
 }
-footer, #push {
-	height: 40px;
-}
-
 
 @media screen and (min-width: 1000px) {
 	header {
@@ -90,7 +81,7 @@ footer, #push {
 	.menu-list + .menu-list {
 		margin-left: 20px;
 	}
-	h1 {
+	header h1 {
 		font-size: 50px;
 	}
 	#container {
@@ -106,5 +97,8 @@ footer, #push {
 	#right-aside {
 		width: 200px;
 		/*height: 500px;*/
+	}
+	#main-footer {
+		font-size: 3em;
 	}
 }

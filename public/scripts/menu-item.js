@@ -6,12 +6,10 @@ angular.module('menuItem', [])
 		template: '<div class="menu-item-inner" ng-transclude></div><div class="underline-base"></div><div class="underline-overlay"></div>',
 		scope: {underline: '@'},
 		link: function(scope, element, attrs) {
-			var $elements = element.find('div');
-			var $inner = $($elements[0]),
-				$base = $($elements[1]),
-				$overlay = $($elements[2])
-					.css('background-color', scope.underline);
+			var elements = element.find('div');
+			$(elements[2]).css('background-color', scope.underline);
 
+			var $base = $(elements[1]);
 			element.mouseover(function() {
 				$base.addClass('underline-base-hover');
 			})
