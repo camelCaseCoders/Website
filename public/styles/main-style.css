@@ -69,6 +69,14 @@ h2 {}
 	color: white;
 }
 
+.menu-item #base-red {
+	background-color: red;
+}
+
+.menu-item #base-yellow {
+	background-color: yellow;
+}
+
 @media screen and (min-width: 1000px) {
 	header {
 		padding-top: 30px;

@@ -4,10 +4,10 @@ angular.module('menuItem', [])
 		restrict: 'C',
 		transclude: true,
 		template: '<div class="menu-item-inner" ng-transclude></div><div class="underline-base"></div><div class="underline-overlay"></div>',
-		scope: {underline: '@'},
+		scope: {id: '@'},
 		link: function(scope, element, attrs) {
 			var elements = element.find('div');
-			$(elements[2]).css('background-color', scope.underline);
+			$(elements[2]).attr('id', scope.id);
 
 			var $base = $(elements[1]);
 			element.mouseover(function() {
@@ -21,5 +21,5 @@ angular.module('menuItem', [])
 });
 /*
 USAGE
-<some-element class="menu-item" underline="some color">Some text</some-element>
+<some-element class="menu-item" data-id="some id for the color">Some text</some-element>
 */
